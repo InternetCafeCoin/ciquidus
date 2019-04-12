@@ -193,19 +193,19 @@ html
                   label#lblX1
                 else
                   label#supply -
-        //- .col-md-2
-        //-   .panel.panel-default.hidden-sm.hidden-xs
-        //-     .panel-heading
-        //-       strong #{settings.markets.exchange} Price
-        //-     .panel-body
-        //-       #pricepanel
-        //-         span.glyphicon.fa.fa-rocket
-        //-         if settings.index.difficulty == 'Hybrid'
-        //-           label#lastPrice -
-        //-           <br>
-        //-           label#lblX1
-        //-         else
-        //-           label#lastPrice -                
+        .col-md-2
+          .panel.panel-default.hidden-sm.hidden-xs
+            .panel-heading
+              strong #{settings.markets.exchange} Price
+            .panel-body
+              #pricepanel
+                span.glyphicon.fa.fa-rocket
+                if settings.index.difficulty == 'Hybrid'
+                  label#lastPrice -
+                  <br>
+                  label#lblX1
+                else
+                  label#lastPrice -                
 
       .row.text-center(style='margin-top:10px;margin-bottom:20px;')
         form.form-inline(method='post', action='/search')
